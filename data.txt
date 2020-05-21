@@ -1,0 +1,183 @@
+AFRIKAANS	South Africa	gelukkige nuwejaar / voorspoedige nuwejaar
+AKPOSSO	Togo, Ghana	ilufio ètussé
+ALBANIAN	Albania, Kosovo, Macedonia	Gëzuar vitin e ri
+ALSATIAN	France (Alsace)	e glëckliches nëies / güets nëies johr
+ANTILLEAN CREOLE	France (French Antilles)	bon lanné
+ARABIC	Maghreb, Near East	عام سعيد (aam saiid) / sana saiida
+ARMENIAN	Armenia, Armenian Highlands	շնորհավոր Նոր տարի (shnorhavor nor tari)
+ATIKAMEKW	Canada (Quebec)	amokitanone
+AZERBAIJANI	Azerbaijan, Russia (Dagestan), Iran	yeni iliniz mübarək
+BAMBARA	Mali	aw ni san'kura / bonne année
+BASAA	Cameroon	nwii lam / ngand nwii lam
+BASQUE	Spain, France	urte berri on
+BELARUSIAN	Belarus	З новым годам (Z novym hodam)
+BENGALI	Bangladesh, India	shuvo noboborsho
+BERBER	Algeria, Mali, Niger	assugas amegaz
+BETI	Cameroon, Republic of the Congo, Equatorial Guinea, Gabon, São Tomé and Príncipe	mbembe mbu
+BHOJPURI	India, Nepal	nauka sal mubarak hoe
+BOBO	Burkina Faso, Mali	bonne année
+BOSNIAN	Bosnia and Herzegovina, Serbia, Montenegro, Kosovo	sretna nova godina
+BRETON	France (Bretagne)	bloavezh mat / bloavez mad
+BULGARIAN	Bulgaria, Turkey, Romania	честита нова година (chestita nova godina)
+BURMESE	Myanmar	hnit thit ku mingalar pa
+CANTONESE	China (Guangdong, Hong Kong, Macau)	sun lin fi lok / kung hé fat tsoi
+CATALAN	Spain (Catalonia, Balearic Islands, Valencia), Andorra	bon any nou
+CEBUANO	Philippines	malipayong bag-ong tuig
+CHINESE (MANDARIN)	China, Taiwan, Singapore	新年快乐 (xin nian kuai le) / 新年好 (xin nian hao)
+CORNISH	UK (Cornwall)	bledhen nowedh da
+CORSICAN	France (Corse), Italy (Sardiania)	pace è salute
+CROATIAN	Croatia, Bosnia and Herzegovina	sretna nova godina
+CZECH	Czech Republic	šťastný nový rok
+DANISH	Denmark, Germany (Southern Schleswig), Greenland, Faroe Islands	godt nytår
+DUALA	Cameroon	mbu mwa bwam
+DUTCH	Netherlands, Belgium, Suriname	gelukkig nieuw jaar
+ENGLISH	UK, Ireland, USA, Canada, Australia, New Zealand, South Africa	happy new year
+ESPERANTO	[constructed language]	feliĉan novan jaron
+ESTONIAN	Estonia	head uut aastat
+EWE	Ghana, Togo	eƒé bé dzogbenyui nami
+EWONDO	Cameroon	mbembe mbu
+FANG	Equatorial Guinea, Gabon	bamba mbou
+FAROESE	Faroe Islands, Denmark	gott nýggjár
+FILIPINO	Philippines	manigong bagong taon
+FINNISH	Finland, Sweden	onnellista uutta vuotta
+FLEMISH	Belgium (Flanders)	gelukkig nieuwjaar
+FON	Benin	kudo xwe yoyo (to 1 person) / mikudo xwe yoyo (several persons)
+FRENCH	France, Canada (Quebec), Belgium (Wallonia), Switzerland (Romandie), Monaco, Luxembourg	bonne année
+FRISIAN	Netherlands, Germany	lokkich nijjier
+FRIULAN	Italy (Friuli)	bon an
+FULA	Africa (Sahel and West Africa)	dioul mo wouri
+GALICIAN	Spain (Galicia)	feliz ano novo
+GEORGIAN	Georgia	გილოცავთ ახალ წელს (gilocavt akhal tsels)
+GERMAN	Germany, Austria, Switzerland, Italy (South Tyrol), Belgium, Liechtenstein, Luxembourg	Frohes neues Jahr / prosit Neujahr
+GREEK	Greece, Cyprus	Καλή Χρονιά (kali chronia / kali xronia) / Ευτυχισμένος ο Καινούριος Χρόνος (eutichismenos o kainourgios chronos)
+GUARANI	Paraguay	rogüerohory año nuévo-re
+GUJARATI	India (Gujarat)	sal mubarak / nootan varshabhinandan
+HAITIAN CREOLE	Haiti	bònn ané
+HAUSA	Nigeria, Niger, Ghana	barka da sabuwar shekara
+HAWAIIAN	USA (Hawaii)	hauoli makahiki hou
+HEBREW	Israel	שנה טובה (shana tova)
+HERERO	Namibia	ombura ombe ombua
+HINDI	India	nav varsh ki subhkamna
+HMONG	China, Vietnam, Laos, Myanmar, Thailand	nyob zoo xyoo tshiab
+HUNGARIAN	Hungary, Romania, Slovakia, Serbia	boldog új évet
+ICELANDIC	Iceland	gleðilegt nýtt ár
+IGBO	Nigeria, Equatorial Guinea	obi anuri nke afor ohuru
+INDONESIAN	Indonesia	selamat tahun baru
+INUKTITUT (NUNAVIMMIUTITUT)	Canada (Quebec)	ᐅᑭᐅᒥ ᓄᑖᒥ ᖁᕕᐊᓱᒋᑦ (ukiumi nutaami quviasugit) - to 1 person
+ᐅᑭᐅᒥ ᓄᑖᒥ ᖁᕕᐊᓱᒋᑦᓯ (ukiumi nutaami quviasugitsi) - to several persons
+IRISH GAELIC	Ireland	ath bhliain faoi mhaise
+ITALIAN	Italy, San Marino, Switzerland	felice anno nuovo / buon anno
+JAPANESE	Japan	あけまして　おめでとう　ございます (akemashite omedetô gozaimasu)
+JAVANESE	Indonesia (Java)	ꦱꦸꦒꦼꦁꦮꦂꦱꦲꦺꦁꦒꦭ꧀ ꧒꧐꧑꧘ (sugêng warsa enggal)
+KABYLE	Algeria (Kabylie)	aseggas ameggaz
+KANNADA	India (Karnakata)	ಹೊಸ ವರ್ಷದ ಹಾರ್ಧಿಕ ಶುಭಾಶಯಗಳು (hosa varshada hardika shubhashayagalu)
+KASHMIRI	India (Kashmir), Pakistan	nav reh mubarakh
+KAZAKH	Kazakhstan	zhana zhiliniz kutti bolsin
+KHMER	Cambodia, Thailand, Vietnam	sur sdei chhnam thmei
+KIEMBU	Kenya	ngethi cya mwaka mweru
+KIKONGO	Democratic Republic of the Congo, the Republic of the Congo, Angola	buanana / yimvu yambote
+KINYARWANDA	Rwanda	umwaka mwiza
+KIRUNDI	Burundi	umwaka mwiza
+KOREAN	Korea, North Korea	새해 복 많이 받으세요 (seh heh bok mani bat uh seyo)
+KURDISH	Turkey, Syria, Iraq, Iran	sala we ya nû pîroz be
+KWANGALI	Namibia, Angola	mvhura zompe zongwa
+KYRGYZ	Kyrgyzstan	ЖАӉЫ ЖЫЛЫӉЫЗДАР МЕНЕН (zhany zhylynyzdar menen)
+LAO	Laos, Thailand	sabai di pi mai
+LARI	Republic of the Congo	buanana / m'vu wambote
+LATIN	Roman Kingdom - extinct	felix sit annus novus
+LATVIAN	Latvia	laimīgu Jauno gadu
+LENAPE	USA (New Jersey)	Weli Newiyal
+LIGURIAN	Italy (Liguria)	bón ànno nêuvo
+LINGALA	Democratic Republic of the Congo, Republic of the Congo, Angola, Central African Republic	bonana / mobu elamu
+LITHUANIAN	Lithuania	laimingų Naujųjų Metų
+LOW SAXON	Germany (Northern Germany), Netherlands	gelükkig nyjaar
+LUGANDA	Uganda	omwaka omulungi
+LUXEMBOURGISH	Luxembourg	e gudd neit Joër
+MACEDONIAN	Macedonia	Среќна Нова Година (srekna nova godina)
+MALAGASY	Madagascar	arahaba tratry ny taona
+MALAY	Malaysia, Brunei, Singapore	selamat tahun baru
+MALAYALAM	India (Kerala)	nava varsha ashamshagal
+MALTESE	Malta	is-sena t-tajba
+MANGAREVAN	France (Gambier Islands)	kia porotu te ano ou
+MAORI	New Zealand	kia hari te tau hou
+MARATHI	India (Maharashtra, Goa)	navin varshaachya hardik shubbheccha
+MARQUESAN	France (Marquesas Islands)	kaoha nui tenei ehua hou
+MBOCHI	Republic of the Congo	bonana / obu elamu
+MOHAWK	Canada (Quebec, Ontario)	ose:rase
+MONGOLIAN	Mongolia	Шинэ жилийн баярын мэнд хvргэе (shine jiliin bayariin mend hurgeye)
+MORÉ	Burkina Faso	wênd na kô-d yuum-songo
+NDEBELE	Zimbabwe	umyaka omucha omuhle
+NEPALI	Nepal, India, Bhutan, Myanmar	naya barsha ko subhakamana
+NGOMBALE	Cameroon	ngeu' shwi pong mbeo paghe
+NORMAN	France (Normandy)	boune anna / jostouse anna
+NORWEGIAN	Norway	godt nyttår
+OCCITAN	France, Spain, Italy, Monaco	bon annada
+ORIYA	India (Odisha)	subha nababarsa / naba barsara hardika abhinandan
+PALAUAN	Palau	ungil beches er rak
+PAPIAMENTO	Aruba, Bonaire, Curaçao	bon anja / felis anja nobo
+PASHTO	Afghanistan, Pakistan	nawe kaalmo mobarak sha
+PENNSYLVANIA DUTCH	USA (Pennsylvania)	Gelukkig Nieu jaar
+PERSIAN (DARI)	Afghanistan	سال نو مبارک (sâle no mobârak)
+PERSIAN (FARSI)	Iran	????? ?????? ??? (Nowruz FarkhondehBaad)
+POLISH	Poland, Lithuania, Belarus, Ukraine, Czech Republic, Slovakia	szczęśliwego nowego roku
+PORTUGUESE	Portugal, Brazil, Cape Verde, Guinea-Bissau, Mozambique, Angola, São Tomé and Príncipe	feliz ano novo
+PUNJABI	Pakistan, India (Punjab)	ਨਵੇਂ ਸਾਲ ਦੀਆਂ ਵਧਾਈਆਂ (nave saal deeyan vadhaiyaan)
+ROMANI	Romania, Europe	baxtalo nevo bersh
+ROMANIAN	Romania, Moldova, Serbia, Ukraine	un an nou fericit / la mulţi ani
+ROMANSH	Switzerland (Grisons)	bun di bun onn
+RUSSIAN	Russia, Belarus, Estonia, Latvia, Lithuania, Ukraine, Moldova, Armenia, Azerbaijan, Georgia, Central Asia	С Новым Годом (S novim godom)
+SAMI (INARI)	Finland	luholâš uđđâ ive
+SAMI (LULE)	Norway, Sweden	buorre ådå jagev
+SAMI (NORTHERN)	Norway, Sweden, Finland	lihkolaš ođđa jagi
+SAMI (SKOLT)	Finland, Russia	leklvaz ođđ eeˊjj
+SAMI (SOUTHERN)	Norway, Sweden	buerie orre jaepie
+SAMOAN	Samoan Islands	ia manuia le tausaga fou
+SANGO	Central African Republic, Democratic Republic of the Congo	nzoni fini ngou
+SARDINIAN	Italy (Sardinia)	bonu annu nou
+SCOTTISH GAELIC	UK (Scotland)	bliadhna mhath ur
+SERBIAN	Serbia, Bosnia and Herzegovina, Croatia, Montenegro	Срећна Нова година (Srećna Nova godina)
+SHIMAORE	France (Mayotte)	mwaha mwema
+SHONA	Zimbabwe	goredzva rakanaka
+SINDHI	Pakistan (Sindh)	nain saal joon wadhayoon
+SINHALESE	Sri Lanka	ශුභ අළුත් අවුරුද්දක් වේවා (shubha aluth awuruddak weiwa)
+SIOUX LAKOTA	USA (Dakota)	omaka t'etcha kin washte kte ni / omaka tetcha oi'yokipi
+SLOVAK	Slovakia	šťastný nový rok
+SLOVENE	Slovenia, Italy, Austria, Croatia, Hungary, Serbia	srečno novo leto
+SOBOTA	Slovenia	dobir leto
+SOMALI	Somalia, Ethiopia, Djibouti, Kenya	sanad wanagsan
+SPANISH	Spain, Hispanic America, Equatorial Guinea	feliz año nuevo
+SRANAN	Suriname	wan bun nyun yari
+SWAHILI	Tanzania, Democratic Republic of the Congo, Kenya, Uganda	mwaka mzuri / heri ya mwaka mpya
+SWEDISH	Sweden, Finland	gott nytt år
+SWISS GERMAN	Switzerland	es guets Nöis
+TAGALOG	Philippines	manigong bagong taon
+TAHITIAN	France (Society Islands)	ia orana i te matahiti api
+TAJIK	Tajikistan, Uzbekistan	соли нав муборак (soli nav muborak)
+TAMANG	Nepal	lhochharla jyaba danba
+TAMIL	India, Sri Lanka	இனிய புத்தாண்டு நல்வாழ்த்துக்கள் (iniya puthandu nal Vazhthukkal)
+TATAR	Russia (Tatarstan)	yaña yıl belän
+TELUGU	India (Andhra Pradesh, Telangana)	నూతన సంవత్శర శుభాకాంక్షలు (nuthana samvathsara subhakankshalu)
+THAI	Thailand	สวัสดีปีใหม่ (sawatdii pimaï)
+TIBETAN	China (Tibet), Nepal	tashi delek / losar tashi delek
+TIGRE	Eritrea	sanat farah wa khare
+TSHILUBA	Democratic Republic of the Congo	tshidimu tshilenga
+TSWANA	Botswana, South Africa	itumelele ngwaga o mosha
+TULU	India (Tulu Nadu)	posa varshada shubashaya
+TURKISH	Turkey, Cyprus, Greece	yeni yılınız kutlu olsun
+TWENTS	Netherlands	gluk in'n tuk
+TWI (ASHANTI)	Ghana	afehyia pa
+UDMURT	Russia (Udmurtia)	Vyľ Aren
+UKRAINIAN	Ukraine	Щасливого Нового Року / З Новим роком (z novym rokom)
+URDU	Pakistan, India	naya sar Mubarak
+URDU	Pakistan, India	naya sal mubarak
+UZBEK	Uzbekistan, Afghanistan	yangi yilingiz qutlug' bo'lsin
+VIETNAMESE	Vietnam	Chúc Mừng Nǎm Mới / Cung Chúc Tân Niên / Cung Chúc Tân Xuân
+WALLOON	Belgium	ene boune anéye, ene boune sintéye
+WALLOON ("betchfessîs" spelling)	Belgium	bone annéye / bone annéye èt bone santéye
+WELSH	UK (Wales)	blwyddyn newydd dda
+WOLOF	Senegal, Gambia, Mauritania	dewenati
+XHOSA	South Africa	nyak'omtsha
+YIDDISH	Central, Eastern and Western Europe, Israel, North America	אַ גוט יאָר (a gut jor)
+YORUBA	Nigeria, Benin	eku odun / eku odun tun tun / eku iyedun
+ZARMA	Niger	barka'n da djiri tagio
+ZULU	South Africa	unyaka omusha omuhle
