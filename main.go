@@ -6,11 +6,13 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"runtime"
+	"strings"
+	"sync"
 	"time"
 )
 
-func main() {
-	// Battery Percentage Alert Message
+func BatteryInforamtion() {
 	arg1 := "upower"
 	arg2 := "-i"
 	arg3 := "/org/freedesktop/UPower/devices/DisplayDevice"
@@ -21,7 +23,51 @@ func main() {
 	}
 	fmt.Println("Command Successfully Executed")
 	output := string(out[:])
-	fmt.Println(output)
+	per := strings.Replace(output, "\n", ",", -1)
+	per = strings.Replace(per, " ", "", -1)
+	per = strings.TrimRight(per, ",")
+	values := strings.Split(per, ",")
+
+	// hoursLeft := values[11][12:]
+	BatteryPercentage := values[12][11:13]
+	// fmt.Println(values)
+	fmt.Println(values[12][11:])
+	fmt.Println(BatteryPercentage)
+	if BatteryPercentage <= "23" {
+		command := "espeak"
+		voice := "-v"
+		langauge := "en-us"
+		gender := "+f3"
+		voices := voice + langauge + gender
+		speed := "-s130"
+		message := fmt.Sprintf("Kuldeep, Battery is Low. Level %s", BatteryPercentage)
+		cmd := exec.Command(command, voices, speed, message)
+		err := cmd.Run()
+		if err != nil {
+			log.Fatal(err)
+
+		}
+		StatusFile()
+	}
+}
+
+func StatusFile() {
+	// check if file exists
+	path := "status.txt"
+	var _, err = os.Stat(path)
+
+	// create file if not exists
+	if os.IsNotExist(err) {
+		var file, err = os.Create(path)
+		if err != nil {
+			return
+		}
+		defer file.Close()
+	}
+	fmt.Println("File Created Successfully", path)
+}
+
+func Speak() {
 	// s := "Make the Computer speak"
 
 	file, err := os.Open("data.txt")
@@ -42,7 +88,13 @@ func main() {
 
 	for _, speak := range txtlines {
 		// fmt.Println(eachline)
-		cmd := exec.Command("espeak", speak)
+		command := "espeak"
+		voice := "-v"
+		langauge := "en-us"
+		gender := "+f3"
+		voices := voice + langauge + gender
+		speed := "-s130"
+		cmd := exec.Command(command, voices, speed, speak)
 		err := cmd.Run()
 		if err != nil {
 			log.Fatal(err)
@@ -50,5 +102,35 @@ func main() {
 		}
 		time.Sleep(time.Second * 2)
 	}
+}
 
+func main() {
+	var wg sync.WaitGroup
+	if runtime.GOOS == "windows" {
+		fmt.Println("Can't Execute this on a windows machine")
+	} else {
+		fmt.Println(runtime.GOOS)
+		// Battery Percentage Alert Message
+		ticker := time.NewTicker(1 * time.Minute)
+		quit := make(chan struct{})
+		wg.Add(1)
+		go func() {
+			for {
+				select {
+				case <-ticker.C:
+					_, err := os.Stat("status.txt")
+					if err == nil {
+						fmt.Printf("File exists\n")
+					} else {
+						BatteryInforamtion()
+					}
+				case <-quit:
+					ticker.Stop()
+					return
+				}
+			}
+		}()
+		wg.Wait()
+		// Speak()
+	}
 }
