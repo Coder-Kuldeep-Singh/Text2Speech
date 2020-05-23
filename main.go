@@ -44,7 +44,7 @@ func BatteryInforamtion() {
 
 }
 func CheckBattery(BatteryPercentage, ChargingStatus string) {
-	if BatteryPercentage <= "23" && ChargingStatus == "discharging" {
+	if BatteryPercentage <= "10" && ChargingStatus == "discharging" {
 		message := fmt.Sprintf("Please connect the charger")
 		Alert(message)
 	} else if BatteryPercentage == "99" && ChargingStatus == "charging" {
