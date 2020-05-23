@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"fmt"
 	"log"
 	"os"
 	"os/exec"
@@ -9,6 +10,20 @@ import (
 )
 
 func main() {
+	// Battery Percentage Alert Message
+	arg1 := "upower"
+	arg2 := "-i"
+	arg3 := "/org/freedesktop/UPower/devices/DisplayDevice"
+
+	out, err := exec.Command(arg1, arg2, arg3).Output()
+	if err != nil {
+		fmt.Printf("%s", err)
+	}
+	fmt.Println("Command Successfully Executed")
+	output := string(out[:])
+	fmt.Println(output)
+	// s := "Make the Computer speak"
+
 	file, err := os.Open("data.txt")
 
 	if err != nil {
@@ -35,6 +50,5 @@ func main() {
 		}
 		time.Sleep(time.Second * 2)
 	}
-	// s := "Make the Computer speak"
 
 }
