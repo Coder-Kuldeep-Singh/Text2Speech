@@ -31,25 +31,47 @@ func BatteryInforamtion() {
 	hoursLeft := values[11][12:]
 	BatteryPercentage := values[12][11:13]
 	ChargingStatus := values[6][6:]
+	Icon := values[13][10:]
+	Icon = strings.Trim(Icon, "'")
 	fmt.Println()
 	fmt.Println("Remaining : ", hoursLeft)
 	fmt.Println("Percentage : ", values[12][11:])
+	fmt.Println(Icon)
 	fmt.Println()
 	_, err = os.Stat("status.txt")
 	if err != nil {
-		CheckBattery(BatteryPercentage, ChargingStatus)
+		CheckBattery(BatteryPercentage, ChargingStatus, Icon)
 	} else {
 		return
 	}
 
 }
-func CheckBattery(BatteryPercentage, ChargingStatus string) {
+func CheckBattery(BatteryPercentage, ChargingStatus, Icon string) {
 	if BatteryPercentage <= "10" && ChargingStatus == "discharging" {
 		message := fmt.Sprintf("Please connect the charger")
 		Alert(message)
+		Message := fmt.Sprintf("Hey Kuldeep, Battery is Low. Level: %s\n", BatteryPercentage)
+		Title := "Battery Alert"
+
+		Notification(BatteryPercentage, Title, Message, Icon)
 	} else if BatteryPercentage == "99" && ChargingStatus == "charging" {
 		message := fmt.Sprintf("Charge full, Please Remove the charger")
 		Alert(message)
+		Message := fmt.Sprintf("Hey Kuldeep, Battery is Full. Level: %s\n", BatteryPercentage)
+		Title := "Battery Alert"
+		Notification(BatteryPercentage, Title, Message, Icon)
+
+	}
+}
+
+func Notification(BatteryPercentage, Title, Message, Icon string) {
+	notify := "notify-send"
+	user := "critical"
+	cmd := exec.Command(notify, Title, Message, "-u", user, "-i", Icon)
+	err := cmd.Run()
+	if err != nil {
+		log.Fatal(err)
+
 	}
 }
 
@@ -123,14 +145,28 @@ func Speak() {
 	}
 }
 
+func WifiStatus() {
+	//  iwlist scan
+	command := "sudo"
+	arg := "iwlist"
+	arg2 := "scan"
+	out, err := exec.Command(command, arg, arg2).Output()
+	if err != nil {
+		fmt.Printf("%s", err)
+	}
+	fmt.Println(string(out))
+
+}
+
 func main() {
 	var wg sync.WaitGroup
 	if runtime.GOOS == "windows" {
 		fmt.Println("Can't Execute this on a windows machine")
 	} else {
+		WifiStatus()
 		// fmt.Println(runtime.GOOS)
 		// Battery Percentage Alert Message
-		ticker := time.NewTicker(5 * time.Minute)
+		ticker := time.NewTicker(5 * time.Second)
 		quit := make(chan struct{})
 		wg.Add(1)
 		go func() {
