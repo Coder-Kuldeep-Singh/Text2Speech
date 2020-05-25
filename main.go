@@ -6,7 +6,9 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"regexp"
 	"runtime"
+	"strconv"
 	"strings"
 	"sync"
 	"time"
@@ -35,10 +37,12 @@ func BatteryInforamtion() {
 	Icon = strings.Trim(Icon, "'")
 	fmt.Println()
 	fmt.Println("Remaining : ", hoursLeft)
+	fmt.Println(BatteryPercentage)
 	fmt.Println("Percentage : ", values[12][11:])
 	fmt.Println(Icon)
+	fmt.Println(ChargingStatus)
 	fmt.Println()
-	_, err = os.Stat("status.txt")
+	_, err = os.Stat("/home/root/Desktop/Text2Speech/status.txt")
 	if err != nil {
 		CheckBattery(BatteryPercentage, ChargingStatus, Icon)
 	} else {
@@ -47,20 +51,20 @@ func BatteryInforamtion() {
 
 }
 func CheckBattery(BatteryPercentage, ChargingStatus, Icon string) {
-	if BatteryPercentage <= "10" && ChargingStatus == "discharging" {
+	Battery := strings.TrimRight(BatteryPercentage, ".")
+	Percentage, _ := strconv.Atoi(Battery)
+	if Percentage < 9 {
 		message := fmt.Sprintf("Please connect the charger")
 		Alert(message)
 		Message := fmt.Sprintf("Hey Kuldeep, Battery is Low. Level: %s\n", BatteryPercentage)
 		Title := "Battery Alert"
-
 		Notification(BatteryPercentage, Title, Message, Icon)
-	} else if BatteryPercentage == "99" && ChargingStatus == "charging" {
+	} else if Percentage == 99 {
 		message := fmt.Sprintf("Charge full, Please Remove the charger")
 		Alert(message)
 		Message := fmt.Sprintf("Hey Kuldeep, Battery is Full. Level: %s\n", BatteryPercentage)
 		Title := "Battery Alert"
 		Notification(BatteryPercentage, Title, Message, Icon)
-
 	}
 }
 
@@ -94,7 +98,7 @@ func Alert(message string) {
 
 func StatusFile() {
 	// check if file exists
-	path := "status.txt"
+	path := "/home/root/Desktop/Text2Speech/status.txt"
 	var _, err = os.Stat(path)
 
 	// create file if not exists
@@ -145,6 +149,7 @@ func Speak() {
 	}
 }
 
+// Get the All info about wifi
 func WifiStatus() {
 	//  iwlist scan
 	command := "sudo"
@@ -154,7 +159,32 @@ func WifiStatus() {
 	if err != nil {
 		fmt.Printf("%s", err)
 	}
-	fmt.Println(string(out))
+	// fmt.Println(string(out))
+	// address
+	re := regexp.MustCompile(`Address: (.*)`)
+	address := re.FindAllStringSubmatch(string(out), -1)
+	// Name of Wifi
+	re1 := regexp.MustCompile(`ESSID:"(.*|\n)"`)
+	Name := re1.FindAllStringSubmatch(string(out), -1)
+	// Bitrates
+	re2 := regexp.MustCompile(`Bit Rates:(.*)`)
+	Bits := re2.FindAllStringSubmatch(string(out), -1)
+
+	// for i, addr := range address {
+	for i := 0; i < len(address); i++ {
+		fmt.Printf("Name %d : %s\n", i, Name[i][1])
+		fmt.Printf("Address %d : %s\n", i, address[i][1])
+		fmt.Printf("Bits %d : %s\n", i, Bits[i][1])
+		fmt.Println("------------------------------------------------------------")
+	}
+	// }
+
+	// space := strings.Replace(string(out), "\n", ",", -1)
+	// space = strings.Replace(space, " ", "", -1)
+	// // fmt.Println(space)
+	// comma := strings.TrimRight(space, ",")
+	// values := strings.Split(comma, ",")
+	// fmt.Println(values)
 
 }
 
@@ -162,8 +192,10 @@ func main() {
 	var wg sync.WaitGroup
 	if runtime.GOOS == "windows" {
 		fmt.Println("Can't Execute this on a windows machine")
+		os.Exit(130)
 	} else {
 		WifiStatus()
+		os.Exit(130)
 		// fmt.Println(runtime.GOOS)
 		// Battery Percentage Alert Message
 		ticker := time.NewTicker(5 * time.Second)
