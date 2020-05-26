@@ -169,6 +169,9 @@ func WifiStatus() {
 	// Bitrates
 	re2 := regexp.MustCompile(`Bit Rates:(.*)`)
 	Bits := re2.FindAllStringSubmatch(string(out), -1)
+	// Encryption
+	re3 := regexp.MustCompile(`Encryption key:(.*)`)
+	Encryption := re3.FindAllStringSubmatch(string(out), -1)
 
 	// for i, addr := range address {
 	for i := 0; i < len(address); i++ {
@@ -182,17 +185,25 @@ func WifiStatus() {
 		fmt.Println("------------------------------------------------------------------------------------------")
 		fmt.Printf("|	Bits		|	%s 	\n", Bits[i][1])
 		fmt.Println("------------------------------------------------------------------------------------------")
+		fmt.Printf("|	Encryption	|	%s 	\n", Encryption[i][1])
+		fmt.Println("------------------------------------------------------------------------------------------")
 		fmt.Println()
 	}
-	// }
+}
 
-	// space := strings.Replace(string(out), "\n", ",", -1)
-	// space = strings.Replace(space, " ", "", -1)
-	// // fmt.Println(space)
-	// comma := strings.TrimRight(space, ",")
-	// values := strings.Split(comma, ",")
-	// fmt.Println(values)
-
+func ConnectWifi() {
+	command := "nmcli"
+	para := "dev"
+	para2 := "wifi"
+	method := "connect"
+	name := "Redhat"
+	para3 := "password"
+	password := ""
+	out, err := exec.Command(command, para, para2, method, name, para3, password).Output()
+	if err != nil {
+		fmt.Printf("%s", err)
+	}
+	fmt.Println(string(out))
 }
 
 func main() {
@@ -202,6 +213,7 @@ func main() {
 		os.Exit(130)
 	} else {
 		WifiStatus()
+		ConnectWifi()
 		os.Exit(130)
 		// fmt.Println(runtime.GOOS)
 		// Battery Percentage Alert Message
