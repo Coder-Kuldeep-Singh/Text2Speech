@@ -213,7 +213,7 @@ func main() {
 		os.Exit(130)
 	} else {
 		WifiStatus()
-		ConnectWifi()
+		// ConnectWifi()
 		os.Exit(130)
 		// fmt.Println(runtime.GOOS)
 		// Battery Percentage Alert Message
