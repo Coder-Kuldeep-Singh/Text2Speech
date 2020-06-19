@@ -1,0 +1,11 @@
+[Unit]
+Description=BatteryAlertNotification
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5s
+ExecStart=/home/tutree/Desktop/Text2Speech/app
+
+[Install]
+WantedBy=multi-user.target
